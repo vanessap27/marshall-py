@@ -25,13 +25,20 @@ a_list = [1, 5, 100, 27, 2, 3, 1]
 
 #3 bubble sort
 
-swapped = True
-while swapped:
-    swapped = False
-    for i in range(1, len(a_list)):
-        left = a_list[i - 1]
-        right = a_list[i]
-        if left > right:
-            swapped = True
-            a_list[i-1], a_list[i] = a_list[i], a_list[i-1]
+# swapped = True
+# while swapped:
+#     swapped = False
+#     for i in range(1, len(a_list)):
+#         left = a_list[i - 1]
+#         right = a_list[i]
+#         if left > right:
+#             swapped = True
+#             a_list[i-1], a_list[i] = a_list[i], a_list[i-1]
+# print(a_list)
+
+#4 insertion 
+for i in range(1, len(a_list)):
+    for j in range( i, 0, -1):
+        if a_list[j] < a_list[j-1]
+        a_list[j-1], a_list[j] = a_list[j], a_list[j]
 print(a_list)
