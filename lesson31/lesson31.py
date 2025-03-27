@@ -10,9 +10,9 @@ elif len(input_a) != len(input_b):
     print("they're not anagrams")
 else: 
     for i in input_a:
-        if i == input_b[x]:
-            x += 1
-        else:
+        if i != input_b[x]:
             print("they're not anagrams. ")
             break 
-        print("they're anagrams! ")
+        else:
+            x += 1
+            print("they're anagrams! ")
